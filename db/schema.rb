@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20170810013905) do
   end
 
   create_table "locations", force: :cascade do |t|
+    t.string "name"
     t.text "description"
     t.string "address"
     t.datetime "start_date"

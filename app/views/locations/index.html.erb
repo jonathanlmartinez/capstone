@@ -1,1 +1,6 @@
-<%= @location.
+<% @locations.each do |location| %>
+<h4> <%= location.name %> </h4> 
+<h5> <%= location.description %> </h5> 
+<h6> <%= location.address %> </h6> 
+<% end %>
+

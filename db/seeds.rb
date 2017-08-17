@@ -21,19 +21,19 @@ users = User.create!([
 
 locations = Location.create!([
   # location 1
-  {description: "Free Party", address: "30 E Lake St, Chicago, IL 60601", start_date: "",end_date:"",active_status:"true",user_id:1},
+  {name: "Free Party", description: "Free Party", address: "30 E Lake St, Chicago, IL 60601", start_date: "",end_date:"",active_status:"true",user_id:1},
   # location 2
-  {description: "Free Wi-Fi", address: "78 E Washington St, Chicago, IL 60602", start_date: "",end_date:"",active_status:"false",user_id:2},
+  {name: "Free Wi-Fi", description: "Free Wi-Fi", address: "78 E Washington St, Chicago, IL 60602", start_date: "",end_date:"",active_status:"false",user_id:2},
   # location 3
-  {description: "Free Event", address: "209 S LaSalle St, Chicago, IL 60604", start_date: "",end_date:"",active_status:"true",user_id:3},
+  {name: "Free Event", description: "Free Event", address: "209 S LaSalle St, Chicago, IL 60604", start_date: "",end_date:"",active_status:"true",user_id:3},
   # location 4
-  {description: "Free USB Charging", address: "226 W Ontario St, Chicago, IL 60654111 S Michigan Ave, Chicago, IL 60603", start_date: "",end_date:"",active_status:"true",user_id:1},
+  {name: "Free USB Charging", description: "Free USB Charging", address: "226 W Ontario St, Chicago, IL 60654111 S Michigan Ave, Chicago, IL 60603", start_date: "",end_date:"",active_status:"true",user_id:1},
   # location 5
-  {description: "Free Parking", address: "111 S Michigan Ave, Chicago, IL 60603", start_date: "",end_date:"",active_status:"true",user_id:3},
+  {name: "Free Parking", description: "Free Parking", address: "111 S Michigan Ave, Chicago, IL 60603", start_date: "",end_date:"",active_status:"true",user_id:3},
   # location 6
-  {description: "Free Toilets", address: "1200 S Lake Shore Dr, Chicago, IL 60605", start_date: "",end_date:"",active_status:"true",user_id:5},
+  {name: "Free Toilets", description: "Free Toilets", address: "1200 S Lake Shore Dr, Chicago, IL 60605", start_date: "",end_date:"",active_status:"true",user_id:5},
   # location 7
-  {description: "Free Water", address: "700 E Grand Ave, Chicago, IL 60611", start_date: "",end_date:"",active_status:"false",user_id:1}
+  {name: "Free Water", description: "Free Water", address: "700 E Grand Ave, Chicago, IL 60611", start_date: "",end_date:"",active_status:"false",user_id:1}
 ]
 )
 
