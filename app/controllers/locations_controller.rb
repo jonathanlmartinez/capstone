@@ -23,10 +23,24 @@ class LocationsController < ApplicationController
     @location_id = params[:id]
     @location = Location.find_by(id: @location_id)
     # I will eventually display the category 
-    # @categories = @product.categories.all
+    # @category = @location.category
     render "show.html.erb"    
   end
-  def 
-    
+  def edit 
+    location_id = params[:id]
+    @location = Location.find_by(id: location_id)
+    render "edit.html.erb"
+  end
+  def update
+    location_id = params[:id]
+    @location = Location.find_by(id: location_id)
+    @location.name = params[:name]
+    @location.description = params[:description]
+    @location.address = params[:address]
+    @location.start_date = params[:start_date]
+    @location.end_date = params[:end_date]
+    @location.save
+    flash[:success] = "location succesfully updated"
+    redirect_to "/locations/#{location_id}"
   end
 end

@@ -18,6 +18,6 @@ Rails.application.routes.draw do
   get "locations/:id" => "locations#show"
 
   get "/locations/:id/edit" => "locations#edit"
-  # patch "/locations/:id" => "locations#update"
+  patch "/locations/:id" => "locations#update"
   # delete "/locations/:id" => "locations#destroy"
 end
