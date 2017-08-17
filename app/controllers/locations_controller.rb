@@ -43,4 +43,12 @@ class LocationsController < ApplicationController
     flash[:success] = "location succesfully updated"
     redirect_to "/locations/#{location_id}"
   end
+  def destroy
+    id = params[:id]
+    location = Location.find_by(id: id)
+    location.destroy
+    flash[:danger] = "Your shit was destroyed!"
+    redirect_to "/"
+    
+  end
 end
