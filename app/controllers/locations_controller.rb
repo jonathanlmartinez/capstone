@@ -1,12 +1,21 @@
 class LocationsController < ApplicationController
   def index
     @locations = Location.all
-    render "index.html.erb"
+
+    # Movies at the park API 
+    # response = Unirest.get("https://data.cityofchicago.org/resource/cm53-g3up.json")
+    # @movies = response.body
+    # Movies end 
+    render "test.html.erb"
   end 
   def new
     render "new.html.erb"
   end
   def create
+    state
+    city
+    zip
+    street
     location  = Location.new(
       name: params[:name],
       description: params[:description],
@@ -48,7 +57,6 @@ class LocationsController < ApplicationController
     location = Location.find_by(id: id)
     location.destroy
     flash[:danger] = "Your shit was destroyed!"
-    redirect_to "/"
-    
+    redirect_to "/" 
   end
 end

@@ -1,0 +1,12 @@
+<script>
+    var _latitude = 51.541216;
+    var _longitude = -0.095678;
+    var jsonPath = $.ajax({
+        type: 'GET',
+        url: '/api/v1/locations',
+        data: id,
+        success: function (data) {
+            // Create HTML element with loaded data
+            $('body').append(data);
+        }
+    });

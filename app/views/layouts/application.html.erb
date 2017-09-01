@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title>Capstone</title>
-    <%= csrf_meta_tags %>
+  <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <link href="/assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/user.style.css" type="text/css">
+    <title>Free shit</title>
+    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+  <!-- nav bar -->
+  <!-- Outer Wrapper-->
+<div id="outer-wrapper">
+    <!-- Inner Wrapper -->
+        <!-- Navigation-->
+        <div class="header">
+            <div class="wrapper">
+                <div class="brand">
+                    <a href="/"><img src="<%= asset_path('logo.png') %>" alt="poop"></a>
+                </div>
+                <nav class="navigation-items">
+                    <div class="wrapper">
+                        <ul class="main-navigation navigation-top-header"></ul>
+                        <ul class="user-area">
+                            <li><a href="/login">Sign In</a></li>
+                            <li><a href="/signup"><strong>Register</strong></a></li>
+                            <li><a href="/logout">Sign Out</a></li>
+                        </ul>
+                        <a href="/location/new" class="submit-item">
+                            <div class="content"><span>Submit Your Item</span></div>
+                            <div class="icon">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- nav bar ends -->
+     <%= yield %>
+     
   </body>
+  
 </html>
+
