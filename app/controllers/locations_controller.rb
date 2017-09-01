@@ -6,7 +6,7 @@ class LocationsController < ApplicationController
     # response = Unirest.get("https://data.cityofchicago.org/resource/cm53-g3up.json")
     # @movies = response.body
     # Movies end 
-    render "test.html.erb"
+    render "index.html.erb"
   end 
   def new
     render "new.html.erb"
@@ -58,5 +58,11 @@ class LocationsController < ApplicationController
     location.destroy
     flash[:danger] = "Your shit was destroyed!"
     redirect_to "/" 
+  end
+
+  def test
+    # ENV['GOOGLE_MAPS_API']
+    render "test.hmtl.erb"
+    
   end
 end

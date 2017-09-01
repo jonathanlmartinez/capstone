@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/test" => "locations#index"
+  get "/test" => "locations#test"
   #User Routes 
   get "/signup" => "users#new"
   post "/users" => "users#create"
