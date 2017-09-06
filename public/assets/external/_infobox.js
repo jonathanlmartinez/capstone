@@ -1,4 +1,5 @@
 function drawInfobox(category, infoboxContent, json, i){
+    console.log('drawInfobox!!!!', json.data);
 
     if(json.data[i].color)          { var color = json.data[i].color }
         else                        { color = '' }

@@ -1,5 +1,6 @@
 class LocationsController < ApplicationController
   def index
+    @categories = Category.all
     @locations = Location.all
 
     # Movies at the park API 
@@ -12,10 +13,7 @@ class LocationsController < ApplicationController
     render "new.html.erb"
   end
   def create
-    state
-    city
-    zip
-    street
+    @x = Category.all
     location  = Location.new(
       name: params[:name],
       description: params[:description],
