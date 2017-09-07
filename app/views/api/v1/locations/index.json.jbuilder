@@ -1,6 +1,8 @@
 json.data @locations.each do |location|
   json.id location.id
-  # json.category location.categories.first.id
+  json.categories location.categories.each do |category|
+    json.category category.category
+  end 
   json.title location.name
   json.description location.description
   json.location location.address
@@ -10,15 +12,15 @@ json.data @locations.each do |location|
   # json.user_id location.user_id
   # json.category location.categories.uniq
 
-  json.color "red"
+  json.color "blue"
   json.featured 0
   json.type_icon "assets/icons/store/apparel/umbrella-2.png"
-  json.category "real_estate"
-  json.latitude 51.541599
-  json.longitude  -0.112588
+  
+  json.latitude location.latitude
+  json.longitude  location.longitude
   json.url "item-detail.html"
   json.type "Apartment"
-  json.type_icon "assets/icons/store/apparel/umbrella-2.png"
+  json.type_icon "assets/icons/media/zoom.png" 
   json.rating 4
   json.gallery ["assets/img/items/5.jpg"]
 end 

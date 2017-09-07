@@ -49,7 +49,7 @@
 //   });
 // });
 
-// function geocodeAddress(geocoder, resultsMap, address) {
+// function geocodeAddress(geocoder, resultsMap) {
 //   geocoder.geocode({'address': address}, function(results, status) {
 //     if (status === 'OK') {
 //       resultsMap.setCenter(results[0].geometry.location);

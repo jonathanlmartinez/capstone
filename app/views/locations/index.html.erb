@@ -268,7 +268,7 @@
 
     $.getJSON(jsonPath)
         .done(function(json) {
-            console.log('THE JSON DATA IS', json);
+            
             createHomepageGoogleMap(_latitude,_longitude,json);
         })
         .fail(function( jqxhr, textStatus, error ) {

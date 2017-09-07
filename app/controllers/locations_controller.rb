@@ -13,11 +13,14 @@ class LocationsController < ApplicationController
     render "new.html.erb"
   end
   def create
-    @x = Category.all
+    street = params[:street]
+    city = params[:city]
+    zip = params[:zip]
+    state = params[:state]
     location  = Location.new(
       name: params[:name],
       description: params[:description],
-      address: params[:address],
+      address: "#{street}, #{city},#{state} #{zip}",
       start_date: params[:start_date],
       end_date: params[:end_date],
       active_status: false,
@@ -27,7 +30,7 @@ class LocationsController < ApplicationController
     redirect_to "/locations"
   end
   def show
-    @location_id = params[:id]
+    location_id = params[:id]
     @location = Location.find_by(id: @location_id)
     # I will eventually display the category 
     # @category = @location.category

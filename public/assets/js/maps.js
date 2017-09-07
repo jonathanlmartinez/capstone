@@ -91,6 +91,13 @@ function createHomepageGoogleMap(_latitude,_longitude,json){
 
             
 
+
+
+
+
+
+
+
             // Create infobox for marker -----------------------------------------------------------------------------------
 
             var infoboxContent = document.createElement("div");

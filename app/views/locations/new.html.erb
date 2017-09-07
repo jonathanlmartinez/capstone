@@ -18,18 +18,7 @@
             <section class="sub-header">
                 <div class="search-bar horizontal collapse" id="redefine-search-form"></div>
                 <!-- /.search-bar -->
-                <div class="breadcrumb-wrapper">
-                    <div class="container">
-                        <ol class="breadcrumb">
-                            <li><a href="index-directory.html"><i class="fa fa-home"></i></a></li>
-                            <li><a href="#">Page</a></li>
-                            <li class="active">Detail</li>
-                        </ol>
-                        <!-- /.breadcrumb-->
-                    </div>
-                    <!-- /.container-->
-                </div>
-                <!-- /.breadcrumb-wrapper-->
+                
             </section>
             <!--end Sub Header-->
 
@@ -48,14 +37,18 @@
                                         <label for="title">Name</label>
                                         <input type="text" class="form-control" id="title" name="name">
                                     </div>
+                                     <div class="form-group large">
+                                        <label for="title">Description</label>
+                                        <input type="text" class="form-control" id="title" name="description">
+                                    </div>
                                 </section>
                                 <section>
                                     <h3>Address</h3>
                                     <div class="row">
                                         <div class="col-md-4 col-sm-4">
                                             <div class="form-group">
-                                                <label for="state">State</label>
-                                                <input type="text" class="form-control" id="state" name="state">
+                                                <label for="state">Street</label>
+                                                <input type="text" class="form-control" id="state" name="street">
                                             </div>
                                         </div>
                                         <!--/.col-md-4-->
@@ -78,8 +71,8 @@
                                         <!--/.col-md-4-->
                                         <div class="col-md-4 col-sm-4">
                                             <div class="form-group">
-                                                <label for="street">Street</label>
-                                                <input type="text" class="form-control" id="street" name="street">
+                                                <label for="street">State</label>
+                                                <input type="text" class="form-control" id="street" name="state"> 
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -106,8 +99,8 @@
                                                 <tbody>
                                                 <tr class="day">
                                                     <td class="day-name">Time</td>
-                                                    <td class="from"><input class="oh-timepicker" type="text" placeholder="From" name="open-hour-from[]"></td>
-                                                    <td class="to"><input class="oh-timepicker" type="text" placeholder="To" name="open-hour-to[]"></td>
+                                                    <td class="from"><input class="oh-timepicker" type="text" placeholder="From" name="start_date"></td>
+                                                    <td class="to"><input class="oh-timepicker" type="text" placeholder="To" name="end_date"></td>
                                                     <td class="non-stop"><div class="checkbox">
                                                         <label>
                                                             <input type="checkbox">Non-stop
@@ -123,7 +116,7 @@
                                 </section>
                                 <!--end Opening Hours-->
                                 <!--/#address-contact-->
-                                <!-- <section>
+                              <!--   <section>
                                     <h3>Map</h3>
                                     <div id="map-simple" class="map-submit"></div>
                                 </section> -->

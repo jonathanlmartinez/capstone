@@ -2,6 +2,7 @@ class Api::V1::LocationsController < ApplicationController
 
   def index
     @locations = Location.all
+    
     render "index.json.jbuilder"
   end
 
