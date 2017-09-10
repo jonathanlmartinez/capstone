@@ -12,24 +12,6 @@ User.create!([
   {first_name: "Derek", last_name: "Williams", username: "dwilliams", email: "dwilliams@email.com", password_digest: "$2a$10$jbqR8RZEj6ip3FPnp4aUhe.WB7yKoLZVsZE/hWlhWRDGcOtdTeFgy"},
   {first_name: "Rosa", last_name: "Santiago", username: "rsantiago", email: "rsantiago@email.com", password_digest: "$2a$10$KWTyH0fYR.CgJvycv.AlVeFOUkzPGo2gvhI.0bawXg4eNcl6kzUnu"}
 ])
-Location.create!([
-  {name: "Parking", description: "Free Parking", address: "3100 S Lake Shore Dr, Chicago, IL 60616", start_date: nil, end_date: nil, active_status: "true", user_id: 3, latitude: "41.84088", longitude: "-87.60952"},
-  {name: "Free Party", description: "Free Party", address: "30 E Lake St, Chicago, IL 60601", start_date: nil, end_date: nil, active_status: "true", user_id: 1, latitude: "41.88605", longitude: "-87.626846"},
-  {name: "Free USB Charging", description: "Free USB Charging", address: "226 W Ontario St, Chicago", start_date: nil, end_date: nil, active_status: "true", user_id: 1, latitude: "41.893406", longitude: "-87.635358"},
-  {name: "House Party", description: "Free Party", address: "170 N Dearborn St, Chicago, IL 60601", start_date: nil, end_date: nil, active_status: "true", user_id: 1, latitude: "41.885116", longitude: "-87.629739"},
-  {name: "Free Parking", description: "Free Parking", address: "111 S Michigan Ave, Chicago, IL 60603", start_date: nil, end_date: nil, active_status: "true", user_id: 3, latitude: "41.880682", longitude: "-87.624215"},
-  {name: "Hotspot", description: "Starbucks has a free wifi ", address: "430 N Clark St, Chicago, IL 60654 ", start_date: "2017-09-06 08:30:00", end_date: "2017-09-06 08:50:00", active_status: "f", user_id: 1, latitude: "41.890168", longitude: "-87.631418"},
-  {name: "Restrooms", description: "Free Toilets", address: "S Cornell Drive, Chicago, IL 60637", start_date: nil, end_date: nil, active_status: "true", user_id: 5, latitude: "41.783819", longitude: "-87.584616"},
-  {name: "Capstone Presentations", description: "Free Event", address: "820 N LaSalle St, Chicago, IL 60610", start_date: nil, end_date: nil, active_status: "true", user_id: 3, latitude: "41.8973", longitude: "-87.633019"},
-  {name: "Free Wi-Fi", description: "Free Wi-Fi", address: "78 E Washington St, Chicago, IL 60602", start_date: nil, end_date: nil, active_status: "false", user_id: 2, latitude: "41.883858", longitude: "-87.624964"},
-  {name: "Free Water", description: "Free Water", address: "700 E Grand Ave, Chicago, IL 60611", start_date: nil, end_date: nil, active_status: "false", user_id: 1, latitude: "41.891432", longitude: "-87.60908"},
-  {name: "free wifi ", description: "the password is admin ", address: "111 w jackson", start_date: nil, end_date: nil, active_status: "false", user_id: 1, latitude: "41.877841", longitude: "-87.631302"},
-  {name: "Edited Free Event", description: " Free Event ", address: " 209 S LaSalle St, Chicago, IL 60604 ", start_date: nil, end_date: nil, active_status: "true", user_id: 3, latitude: "41.879044", longitude: "-87.631864"},
-  {name: "Free Toilets", description: "Free Toilets", address: "1200 S Lake Shore Dr, Chicago, IL 60605", start_date: nil, end_date: nil, active_status: "true", user_id: 5, latitude: "41.867622", longitude: "-87.613662"},
-  {name: "Wi-Fi Spot", description: "Free Wi-Fi", address: "\n131 N Clinton St, Chicago, IL 60661", start_date: nil, end_date: nil, active_status: "false", user_id: 2, latitude: "41.884077", longitude: "-87.640852"},
-  {name: "Water Fountain", description: "Free Water", address: "\n5700 S Lake Shore Dr, Chicago, IL 60637", start_date: nil, end_date: nil, active_status: "false", user_id: 1, latitude: "41.795271", longitude: "-87.57732"},
-  {name: "USB Charging", description: "Free USB Charging", address: "1244 N Dearborn Pkwy, Chicago, IL 60610", start_date: nil, end_date: nil, active_status: "true", user_id: 1, latitude: "41.905242", longitude: "-87.630488"}
-])
 Category.create!([
   {category: "Events"},
   {category: "Wi-Fi"},
@@ -40,6 +22,34 @@ Category.create!([
   {category: "Water Fountains"},
   {category: "Other"}
 ])
+Location.create!([
+  {name: "Jonathan Martinez", description: "", address: "8717 S Saginaw Ave, Chicago,IL 60617", start_date: nil, end_date: nil, active_status: "f", user_id: 1, latitude: "41.73669", longitude: "-87.559408", date: "2017-09-15"},
+  {name: "Parking", description: "Free Parking", address: "3100 S Lake Shore Dr, Chicago, IL 60616", start_date: nil, end_date: nil, active_status: "true", user_id: 3, latitude: "41.84088", longitude: "-87.60952", date: nil},
+  {name: "Free Party", description: "Free Party", address: "30 E Lake St, Chicago, IL 60601", start_date: nil, end_date: nil, active_status: "true", user_id: 1, latitude: "41.88605", longitude: "-87.626846", date: nil},
+  {name: "Free USB Charging", description: "Free USB Charging", address: "226 W Ontario St, Chicago", start_date: nil, end_date: nil, active_status: "true", user_id: 1, latitude: "41.893406", longitude: "-87.635358", date: nil},
+  {name: "House Party", description: "Free Party", address: "170 N Dearborn St, Chicago, IL 60601", start_date: nil, end_date: nil, active_status: "true", user_id: 1, latitude: "41.885116", longitude: "-87.629739", date: nil},
+  {name: "Free Parking", description: "Free Parking", address: "111 S Michigan Ave, Chicago, IL 60603", start_date: nil, end_date: nil, active_status: "true", user_id: 3, latitude: "41.880682", longitude: "-87.624215", date: nil},
+  {name: "Hotspot", description: "Starbucks has a free wifi ", address: "430 N Clark St, Chicago, IL 60654 ", start_date: "2017-09-06 08:30:00", end_date: "2017-09-06 08:50:00", active_status: "f", user_id: 1, latitude: "41.890168", longitude: "-87.631418", date: nil},
+  {name: "Restrooms", description: "Free Toilets", address: "S Cornell Drive, Chicago, IL 60637", start_date: nil, end_date: nil, active_status: "true", user_id: 5, latitude: "41.783819", longitude: "-87.584616", date: nil},
+  {name: "Capstone Presentations", description: "Free Event", address: "820 N LaSalle St, Chicago, IL 60610", start_date: nil, end_date: nil, active_status: "true", user_id: 3, latitude: "41.8973", longitude: "-87.633019", date: nil},
+  {name: "Free Wi-Fi", description: "Free Wi-Fi", address: "78 E Washington St, Chicago, IL 60602", start_date: nil, end_date: nil, active_status: "false", user_id: 2, latitude: "41.883858", longitude: "-87.624964", date: nil},
+  {name: "Free Water", description: "Free Water", address: "700 E Grand Ave, Chicago, IL 60611", start_date: nil, end_date: nil, active_status: "false", user_id: 1, latitude: "41.891432", longitude: "-87.60908", date: nil},
+  {name: "free wifi ", description: "the password is admin ", address: "111 w jackson", start_date: nil, end_date: nil, active_status: "false", user_id: 1, latitude: "41.877841", longitude: "-87.631302", date: nil},
+  {name: "Edited Free Event", description: " Free Event ", address: " 209 S LaSalle St, Chicago, IL 60604 ", start_date: nil, end_date: nil, active_status: "true", user_id: 3, latitude: "41.879044", longitude: "-87.631864", date: nil},
+  {name: "Free Toilets", description: "Free Toilets", address: "1200 S Lake Shore Dr, Chicago, IL 60605", start_date: nil, end_date: nil, active_status: "true", user_id: 5, latitude: "41.867622", longitude: "-87.613662", date: nil},
+  {name: "Wi-Fi Spot", description: "Free Wi-Fi", address: "\n131 N Clinton St, Chicago, IL 60661", start_date: nil, end_date: nil, active_status: "false", user_id: 2, latitude: "41.884077", longitude: "-87.640852", date: nil},
+  {name: "Water Fountain", description: "Free Water", address: "\n5700 S Lake Shore Dr, Chicago, IL 60637", start_date: nil, end_date: nil, active_status: "false", user_id: 1, latitude: "41.795271", longitude: "-87.57732", date: nil},
+  {name: "USB Charging", description: "Free USB Charging", address: "1244 N Dearborn Pkwy, Chicago, IL 60610", start_date: nil, end_date: nil, active_status: "true", user_id: 1, latitude: "41.905242", longitude: "-87.630488", date: nil},
+  {name: "test", description: "", address: "test, test,IL 60032", start_date: nil, end_date: nil, active_status: "f", user_id: 1, latitude: nil, longitude: nil, date: nil},
+  {name: "test", description: "", address: "test, test,IL 60032", start_date: nil, end_date: nil, active_status: "f", user_id: 1, latitude: nil, longitude: nil, date: nil},
+  {name: "test", description: "test", address: "test, test,IL 60032", start_date: nil, end_date: nil, active_status: "f", user_id: 1, latitude: nil, longitude: nil, date: nil},
+  {name: "test2", description: "test2", address: "test2, test,IL 60032", start_date: nil, end_date: nil, active_status: "f", user_id: 1, latitude: nil, longitude: nil, date: nil},
+  {name: "free hotdogs", description: "This chain is giving out its turkey dogs for free on National Hot Dog Day", address: "2113 s scoville ave, berwyn,IL 60402", start_date: "2017-09-10 20:50:00", end_date: "2017-09-10 22:50:00", active_status: "f", user_id: 1, latitude: nil, longitude: nil, date: nil},
+  {name: "free hamburgers", description: "the password is admin ", address: "160 N LaSalle Dr, chicago,IL 60601", start_date: nil, end_date: nil, active_status: "f", user_id: 1, latitude: "41.884811", longitude: "-87.632896", date: nil},
+  {name: "free hotdogs", description: "", address: "2113 s scoville ave, berwyn,IL 60402", start_date: nil, end_date: nil, active_status: "f", user_id: 1, latitude: "41.85198", longitude: "-87.786941", date: nil},
+  {name: "date test", description: "date test", address: "1062 N Penny Ln, Palatine,IL  60067", start_date: nil, end_date: nil, active_status: "f", user_id: 1, latitude: "42.129685", longitude: "-88.073813", date: "2017-09-06"}
+])
+
 Image.create!([
   {image: "http://www.homedepot.com/catalog/productImages/1000/5e/5e91612e-e595-4f4e-afd4-d75928ac0272_1000.jpg", user_id: 1, location_id: 7},
   {image: "https://blog.getmagic.com/wp-content/uploads/2017/07/how-to-plan-a-party-1.jpg", user_id: 1, location_id: 1},
@@ -56,6 +66,7 @@ Image.create!([
   {image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Toilets_unisex.svg", user_id: 5, location_id: 6},
   {image: "https://static.vecteezy.com/system/resources/previews/000/061/764/non_2x/free-wi-fi-vector-icon.jpg", user_id: 2, location_id: 2}
 ])
+
 LocationCategory.create!([
   {category_id: 1, location_id: 3},
   {category_id: 2, location_id: 2},
@@ -64,4 +75,17 @@ LocationCategory.create!([
   {category_id: 5, location_id: 5},
   {category_id: 6, location_id: 6},
   {category_id: 7, location_id: 7},
+  {category_id: 1, location_id: 3},
+  {category_id: 2, location_id: 2},
+  {category_id: 3, location_id: 1},
+  {category_id: 4, location_id: 4},
+  {category_id: 5, location_id: 5},
+  {category_id: 6, location_id: 6},
+  {category_id: 7, location_id: 7},
+  {category_id: 5, location_id: 21},
+  {category_id: 1, location_id: 22},
+  {category_id: 1, location_id: 23},
+  {category_id: 1, location_id: 24},
+  {category_id: 1, location_id: 25},
+  {category_id: 5, location_id: 26}
 ])
