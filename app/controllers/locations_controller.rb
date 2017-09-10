@@ -14,14 +14,16 @@ class LocationsController < ApplicationController
     render "new.html.erb"
   end
   def create
+
     street = params[:street]
     city = params[:city]
     zip = params[:zip]
     state = params[:state]
+    full_street_address = "#{street}, #{city},#{state} #{zip}" 
     location  = Location.new(
       name: params[:name],
       description: params[:description],
-      address: "#{street}, #{city},#{state} #{zip}",
+      address: full_street_address,
       start_date: params[:start_date],
       end_date: params[:end_date],
       active_status: false,
