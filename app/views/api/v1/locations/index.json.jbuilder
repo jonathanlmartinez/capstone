@@ -6,6 +6,7 @@ json.data @locations.each do |location|
   json.title location.name
   json.description location.description
   json.location location.address
+  json.date location.date 
   json.start_date location.start_date
   json.end_date location.end_date
   json.active_status location.active_status

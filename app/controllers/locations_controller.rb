@@ -26,6 +26,7 @@ class LocationsController < ApplicationController
       address: full_street_address,
       start_date: params[:start_date],
       end_date: params[:end_date],
+      date: params[:date],
       active_status: false,
       user_id: current_user.id
       )
