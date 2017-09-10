@@ -3,6 +3,11 @@ json.data @locations.each do |location|
   json.categories location.categories.each do |category|
     json.category category.category
   end 
+  if location.categories.first
+    json.category location.categories.first.category
+  else
+    json.category "None"
+  end
   json.title location.name
   json.description location.description
   json.location location.address
@@ -12,7 +17,7 @@ json.data @locations.each do |location|
   json.active_status location.active_status
   json.user_id location.user_id
   # json.category location.categories.uniq
-
+  
   json.color "red"
   json.featured 0
   json.type_icon "assets/icons/store/apparel/umbrella-2.png"
@@ -23,5 +28,11 @@ json.data @locations.each do |location|
   json.type "Apartment"
   json.type_icon "assets/icons/media/zoom.png" 
   json.rating 4
-  json.gallery "assets/img/items/5.jpg"
+  if location.images.map { |location| location.image }.length > 0
+    json.gallery location.images.map { |location| location.image }
+  else
+    json.gallery ["assets/img/items/5.jpg"]
+  end
+  # json.array! location.images
+
 end 
