@@ -32,6 +32,8 @@ gem 'bcrypt', '~> 3.1.11'
 
 gem 'unirest','~> 1.1.2'
 
+gem 'geocoder'
+
 gem 'seed_dump'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

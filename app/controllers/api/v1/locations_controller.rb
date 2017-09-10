@@ -7,7 +7,7 @@ class Api::V1::LocationsController < ApplicationController
   end
 
   # def create
-  #   @employee = Employee.new(
+  #   @image = Image.new(
   #     first_name: params[:first_name],
   #     last_name: params[:last_name],
   #     birthdate: params[:birthdate],

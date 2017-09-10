@@ -6,13 +6,13 @@ json.data @locations.each do |location|
   json.title location.name
   json.description location.description
   json.location location.address
-  # json.start_date location.start_date
-  # json.end_date location.end_date
-  # json.active_status location.active_status
-  # json.user_id location.user_id
+  json.start_date location.start_date
+  json.end_date location.end_date
+  json.active_status location.active_status
+  json.user_id location.user_id
   # json.category location.categories.uniq
 
-  json.color "blue"
+  json.color "red"
   json.featured 0
   json.type_icon "assets/icons/store/apparel/umbrella-2.png"
   
@@ -22,5 +22,5 @@ json.data @locations.each do |location|
   json.type "Apartment"
   json.type_icon "assets/icons/media/zoom.png" 
   json.rating 4
-  json.gallery ["assets/img/items/5.jpg"]
+  json.gallery "assets/img/items/5.jpg"
 end 

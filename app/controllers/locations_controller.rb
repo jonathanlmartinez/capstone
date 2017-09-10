@@ -10,6 +10,7 @@ class LocationsController < ApplicationController
     render "index.html.erb"
   end 
   def new
+    @categories = Category.all
     render "new.html.erb"
   end
   def create
@@ -27,6 +28,15 @@ class LocationsController < ApplicationController
       user_id: current_user.id
       )
     location.save
+    if location.save 
+      category  = LocationCategory.new(
+        category_id: params[:category],
+        location_id: location.id
+        )
+      category.save
+      # image.
+
+    end
     redirect_to "/locations"
   end
   def show

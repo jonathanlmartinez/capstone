@@ -116,7 +116,7 @@ function createHomepageGoogleMap(_latitude,_longitude,json){
 
             // Infobox HTML element ----------------------------------------------------------------------------------------
 
-            var category = json.data[i].category;
+            var category = json.data[i].categories.first;
             console.log('category is', category, infoboxContent, i);
             infoboxContent.innerHTML = drawInfobox(category, infoboxContent, json, i);
 
