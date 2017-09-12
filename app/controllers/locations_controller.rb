@@ -45,8 +45,8 @@ class LocationsController < ApplicationController
     redirect_to "/locations"
   end
   def show
-    category = params[:category].capitalize
-    @locations = Location.joins(:categories).where("category = ?", category)
+    @category = params[:category]
+    @locations = Location.joins(:categories).where("category = ?", @category)
     # Employer.joins(:cities).where("cities.name = ?", "Houston").first
     # I will eventually display the category 
     # @category = @location.category

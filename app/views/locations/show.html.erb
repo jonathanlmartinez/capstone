@@ -1,5 +1,12 @@
- <% @locations.each do |location| %> 
- <p> <%= location.name  %> </p>
-
- <% end %> 
-      
+<div class="container">
+  <div class="jumbotron">
+    <h1>  <%= @category %>  </h1>
+    <p><a class="btn btn-primary btn-sm" href="/" role="button">Return Home</a></p>
+     <ul class="list-group"> 
+ <% @locations.each do |location| %>
+ 
+  <li class="list-group-item"> <%= "#{location.name} - #{location.address}" %>  </li>
+ 
+<% end %> 
+</ul>
+  </div>

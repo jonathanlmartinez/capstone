@@ -87,7 +87,7 @@
                                     <header><h2>Categories</h2></header>
                                     <ul class="categories">
                                     <% @categories.each do |category| %>
-                                        <li><a href=""><%= category.category %></a>
+                                        <li><a href="locations/<%=category.category%>"> <%=category.category%></a>
                                     <% end %>  
                                         </li>
                                         
