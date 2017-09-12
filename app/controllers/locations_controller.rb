@@ -1,4 +1,6 @@
+
 class LocationsController < ApplicationController
+
   def index
     @categories = Category.all
     @locations = Location.all
@@ -43,8 +45,9 @@ class LocationsController < ApplicationController
     redirect_to "/locations"
   end
   def show
-    location_id = params[:id]
-    @location = Location.find_by(id: @location_id)
+    category = params[:category].capitalize
+    @locations = Location.joins(:categories).where("category = ?", category)
+    # Employer.joins(:cities).where("cities.name = ?", "Houston").first
     # I will eventually display the category 
     # @category = @location.category
     render "show.html.erb"    

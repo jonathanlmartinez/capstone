@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   get "/locations" => "locations#index"
   get "/location/new" => "locations#new"
   post "locations" => "locations#create"
-  get "locations/:id" => "locations#show"
+  get "locations/:category" => "locations#show"
   get "/locations/:id/edit" => "locations#edit"
   patch "/locations/:id" => "locations#update"
   delete "/locations/:id" => "locations#destroy"

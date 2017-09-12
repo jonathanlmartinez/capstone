@@ -32,6 +32,15 @@ gem 'bcrypt', '~> 3.1.11'
 
 gem 'unirest','~> 1.1.2'
 
+gem 'nokogiri','~> 1.8.0'
+# httparty
+gem 'multi_xml'
+gem 'httparty'
+# pry 
+gem 'coderay'
+gem 'slop'
+gem 'pry'
+
 gem 'geocoder'
 
 gem 'seed_dump'

@@ -6,7 +6,7 @@ json.data @locations.each do |location|
   if location.categories.first
     json.category location.categories.first.category
   else
-    json.category "None"
+    json.category "Other"
   end
   json.title location.name
   json.description location.description
@@ -26,6 +26,11 @@ json.data @locations.each do |location|
   json.longitude  location.longitude
   json.url "item-detail.html"
   json.type "Apartment"
+  if location.categories.first
+    json.type location.categories.first.category
+  else
+    json.type "Other"
+  end
   json.type_icon "assets/icons/media/zoom.png" 
   json.rating 4
   if location.images.map { |location| location.image }.length > 0

@@ -1,12 +1,5 @@
-<h1> <%= @location.name %> </h1>
-<h1> <%= @location.description %> </h1>
-<h1> <%= @location.address %> </h1>
-<h1> <%= @location.start_date %> </h1>
-<h1> <%= @location.end_date %> </h1>
-<% if current_user %>
-  <%= form_tag "#{@location.id}", method: "delete" do %>
-  <input type="submit" value="delete">
-  <% end %>
-<% end %>
+ <% @locations.each do |location| %> 
+ <p> <%= location.name  %> </p>
 
+ <% end %> 
       
