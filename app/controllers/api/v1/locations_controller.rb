@@ -4,7 +4,20 @@ class Api::V1::LocationsController < ApplicationController
 
   def index
     @locations = Location.all
-    
+    if params[:category_ids]
+      @locations = @locations.select do |location|
+        # location.location_categories.map { |lc| lc.category_id }.include? 
+        valid = false
+        params[:category_ids].each do |category_id|
+          location.location_categories.each do |location_category|
+            if category_id.to_i == location_category.category_id.to_i
+              valid = true
+            end
+          end
+        end
+        valid
+      end
+    end
     render "index.json.jbuilder"
   end
 
