@@ -39,6 +39,12 @@ class LocationsController < ApplicationController
         location_id: location.id
         )
       category.save
+      image = Image.new(
+        image: params[:image],
+        user_id: current_user.id,
+        location_id: location.id
+        )
+      image.save
       # image.
 
     end

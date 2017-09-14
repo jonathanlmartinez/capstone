@@ -31,7 +31,7 @@
                 </div>
                 <nav class="navigation-items">
                     <div class="wrapper">
-                        <ul class="main-navigation navigation-top-header"></ul>
+                        <!-- <ul class="main-navigation navigation-top-header"></ul> -->
                         <ul class="user-area">
                         <% if current_user %>
                             <li><a href="/logout">Sign Out</a></li>
@@ -41,17 +41,22 @@
                             <li><a href="/login">Sign In</a></li>
                         <% end  %>  
                         </ul>
+                        <% if current_user %>
                         <a href="/location/new" class="submit-item">
                             <div class="content"><span>Submit Your Item</span></div>
                             <div class="icon">
                                 <i class="fa fa-plus"></i>
                             </div>
                         </a>
+                        <% end  %> 
+
                     </div>
                 </nav>
             </div>
         </div>
         <!-- nav bar ends -->
+
+
      <%= yield %>
      
   </body>
