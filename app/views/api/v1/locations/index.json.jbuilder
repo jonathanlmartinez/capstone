@@ -3,9 +3,6 @@ json.data @locations.each do |location|
   json.categories location.categories.each do |category|
     json.category category.category
   end 
-  json.random location.images.each do |image|
-    json.image image.image
-  end 
   if location.categories.first
     json.category location.categories.first.category
   else
@@ -32,7 +29,7 @@ json.data @locations.each do |location|
   if location.categories.first
     json.type location.categories.first.category
   else
-    json.type "Other"
+    json.category "Other"
   end
   json.type_icon "assets/icons/media/zoom.png" 
   json.rating 4
