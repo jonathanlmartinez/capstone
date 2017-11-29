@@ -1,24 +1,5 @@
-# README
+# Capstone - Freester App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+As my final project I created a rails app. 
+The point of the application is to allow a user sumbit free stuff for others to see and enjoy. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
